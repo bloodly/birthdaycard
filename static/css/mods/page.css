@@ -444,14 +444,14 @@
 
 /*第三页*/
 .page3-wrap {
-	padding-top: 16%;
+    padding-top: 0;
 }
-.page3-wrap .icon-lips {
-	width: 100%;
-	height: 82px;
-	background: transparent url(../../images/icon-lips.png) no-repeat center;
-	background-size: contain;
-	margin-bottom: 30%;
+.page3-wrap .icon-happy {
+  width: 100%;
+    height: 125px;
+    background: transparent url(../../images/happy.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 10%;
 }
 /*动画元素*/
 /*第一页*/
@@ -494,6 +494,29 @@
 	-webkit-animation: userpic 5s linear infinite ;
 }
 
+.twopics {
+  margin-top:5%;
+  position: relative;
+}
+
+.twopics img {
+  width:20%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius:50%;
+  overflow: hidden;
+}
+.twopics .left {
+  left:10%;
+  animation: bounceUp 3s linear infinite ;
+  -webkit-animation: bounceUp 3s linear infinite ;
+}
+.twopics .right {
+  right: 10%;
+  animation: bounceUp 3s linear 1s infinite;
+  -webkit-animation: bounceUp 3s linear 1s infinite;
+}
+
 #canvas {
 	position: absolute;
 	top:0;
@@ -531,3 +554,21 @@
 		-webkit-transform:rotate(10deg);
     }
 }
+
+@-webkit-keyframes bounceUp
+    {
+        0% {transform: translateY(0%);}
+        30% {transform: translateY(-20%);}
+        50%{transform: translateY(0);}
+        70%{transform: translateY(-10%);}
+        100%{transform: translateY(0);}
+    }
+
+@keyframes bounceUp
+    {
+        0% {transform: translateY(0%);}
+        30% {transform: translateY(-20%);}
+        50%{transform: translateY(0);}
+        70%{transform: translateY(-10%);}
+        100%{transform: translateY(0);}
+    }
